@@ -1,0 +1,30 @@
+merge of github.com/jdonaldson/vaxe and  github.com/MarcWeber/vim-haxe as
+discussed on the mailinglist.
+
+feature list:
+  - haxe based completion
+  - ctags based completion - because it makes writing some code shorter.
+    using haxe -v or such the way you told me.
+    (Yes, the ctags based completion is also a compromise only - but works
+    for 90% of cases)
+  - configuration based on .hxml files. This should support many targets
+    using --next.
+  - running ctags (on std core library and on -lib libraries installed by
+    haxelib ?)
+  - adding ctags to &ctags var so that tags are found
+  - sane defaults for
+    * syntax
+    * indentation
+    * commenting
+    * matchit                                              
+  - eventually some features taking actions based on compiler messages
+    such as adding imports (experimental)
+
+  optional:
+    * snipmate
+    * vim-addon-actions
+    * status line/tagbar (http://majutsushi.github.com/tagbar/)
+
+
+TODO: 
+vim-haxe is much more descriptive than "vaxe". Its better for google and humans IMHO.
